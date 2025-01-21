@@ -95,12 +95,13 @@ import sys
 DOMAIN=''
 
 if len(sys.argv)==2:
-    DOMAIN=sys.argv[1].split('.')
-    for oc in DOMAIN:
+    DOMAIN="http://"
+    DOM=sys.argv[1].split('.')
+    for oc in DOM:
         if not oc.isdigit():
-            DOMAIN="http://"+sys.argv[1]
-            break            
-    DOMAIN="https://"+sys.argv[1]
+            DOMAIN="https://"
+            break
+    DOMAIN=DOMAIN+sys.argv[1]
 else:
     DOMAIN="http://127.0.0.1"
 
