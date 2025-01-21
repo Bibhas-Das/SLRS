@@ -1,48 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Located Reverse Shell (SLRS)</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0 20px;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        section {
-            margin: 20px 0;
-            padding: 20px;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        pre {
-            background: #f4f4f9;
-            border-left: 5px solid #ddd;
-            padding: 10px;
-            overflow-x: auto;
-        }
-        code {
-            color: #d6336c;
-        }
-        ul {
-            padding-left: 20px;
-        }
-    </style>
-</head>
+
 <body>
 <header>
     <h1>Static Located Reverse Shell (SLRS)</h1>
