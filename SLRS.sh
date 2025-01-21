@@ -142,23 +142,6 @@ def hide(): #This function to hide the while prompt while it is executing. Suppo
         ctypes.windll.user32.ShowWindow(console_handle, SW_HIDE)
         if parent_handle:
             ctypes.windll.user32.ShowWindow(parent_handle, SW_HIDE)
-    elif name == 'posix':
-        #subprocess.call('osascript -e "tell application \"System Events\" to set visible of process \"Terminal\" to false"', shell=True)
-        # Linux
-        try:
-            import gtk
-        except ImportError:
-            try:
-                import gi
-                gi.require_version('Gtk', '3.0')
-                from gi.repository import Gtk
-            except ImportError:
-                print("GTK not available, cannot hide terminal on Linux.")
-                return
-
-        window = Gtk.Window()
-        window.hide()
-
     else:
         print("Unsupported operating system.")
 
